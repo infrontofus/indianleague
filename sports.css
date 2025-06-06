@@ -1,0 +1,202 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-section-one {
+  height: 80px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.nav-img img{
+  height: 70px;
+  margin-top: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-img img:hover{
+   transform: scale(1.05);
+}
+
+.nav-section-two {
+  height: 40px;
+  background-image: url('bg-nav.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-section-two .quicklinks a{
+  color: white;
+  text-decoration: none;
+  padding: 0px 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.quicklinks {
+  padding-top: 10px;
+}
+
+.nav-section-two .quicklinks a:hover {
+  color: white;
+  filter: drop-shadow(1px 1px 0px #1E00FF);
+  transform: scale(1.05);
+  
+}
+
+.sports-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px 0px;
+}
+
+.card {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  width: 200px;
+  padding-bottom: 10px;
+  box-shadow: 2px 3px 7px gray;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+.card img {
+  width: 100%;
+  border-radius:10px;
+  box-shadow: 2px 4px 8px gray;
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+.card h5 {
+  margin-top: 10px;
+  color: black;
+  position: static;
+}
+
+
+footer {
+  background-image: url('bg.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(90%);
+}
+
+.footer-sec {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.footer-quicklinks {
+  margin-top: 50px;
+  color: white;
+  
+}
+
+.footer-quicklinks a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-quicklinks a:hover {
+  color: white;
+  filter: drop-shadow(1px 1px 0px #1E00FF);
+  transform: scale(1.05);
+}
+
+.footer-quicklinks p {
+  text-decoration: underline 1px;
+  padding-bottom: 20px;
+
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  margin-top: 50px;
+  margin-right: -80px ;
+}
+
+.footer-social img {
+  width: 40px;
+  transition: transform 0.3s ease-in-out;
+   border-radius: 10px;
+}
+
+.footer-social img:hover{
+  transform: scale(1.05);
+}
+
+.footer-social p {
+  text-decoration: underline 1px;
+  padding-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+ 
+}
+
+.footer-logo img:hover{
+  transform: scale(1.05);
+}
+
+.copyrights{
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.56);
+}
+
+
+@media screen and (max-width:700px) {
+
+  .card {
+    width: 140px;
+  }
+
+  .card img {
+    width: 140px;
+  }
+
+  .footer-sec {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30px;
+    padding-bottom: 30px;
+  }
+
+  .footer-quicklinks {
+    margin-left: 10px;
+  }
+
+  .footer-social {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    filter: drop-shadow(3px 5px 7px gray);
+  }
+
+
+}

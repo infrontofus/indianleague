@@ -1,0 +1,294 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-section-one {
+  height: 80px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.nav-img img{
+  height: 70px;
+  margin-top: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-img img:hover{
+   transform: scale(1.05);
+}
+
+.nav-section-two {
+  height: 40px;
+  background-image: url('bg-nav.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-section-two .quicklinks a{
+  color: white;
+  text-decoration: none;
+  padding: 0px 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.quicklinks {
+  padding-top: 10px;
+}
+
+.nav-section-two .quicklinks a:hover {
+  color: white;
+  filter: drop-shadow(1px 1px 0px #1E00FF);
+  transform: scale(1.05);
+  
+}
+
+.cricket {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+}
+
+.cricket h3{
+  padding: 10px;
+}
+
+.teams-name {
+  text-align: center;
+}
+
+.intro {
+  padding-bottom: 50px;
+}
+
+.table1 {
+  width: 70%;
+  margin: 50px auto;
+  border-collapse: collapse;
+}
+
+.table1 .thead1 th {
+    background: linear-gradient(180deg,  #0055a5, #0f026e);
+    color:white;
+    
+    border-radius: 50px;
+}
+
+.table1 .tbody1 td {
+  background: linear-gradient(90deg,  #b2d6f8, white, #b2d6f8);
+ 
+      border-radius: 50px;
+
+}
+
+.thead1 {
+  
+  color: black;
+}
+
+.thead1 th {
+  padding: 9px 0px;
+  text-align: center;
+  
+}
+
+.tbody1 td {
+  padding: 5px 0px;
+  text-align: center;
+  
+}
+
+.table2{
+  width: 80%;
+  border-collapse: collapse;
+  margin: 0px auto;
+}
+
+.thead2 {
+  background: linear-gradient(180deg,  #0055a5, #0f026e);
+  color: whitesmoke;
+}
+
+.thead2 th{
+  padding: 7px 0px;
+  border-radius: 25px;
+}
+
+.tbody2 td {
+  background: radial-gradient(circle,  #b2d6f8, white);
+  text-align: center;
+  padding: 6px 0px;
+  border-radius: 50px;
+}
+
+
+
+.table3{
+  width: 70%;
+  margin: 50px auto;
+  border-collapse: collapse;
+  box-shadow: 3px 5px 8px gray;
+}
+
+.thead3 {
+  background-color:  #b2d6f8;
+  color: black;
+}
+
+.thead3 th {
+  padding: 9px 0px;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  
+}
+
+.tbody3 td {
+  padding: 5px 0px;
+
+  text-align: center;
+  
+}
+
+.teams-name {
+  padding: 20px;
+}
+
+.tbody3 tr:nth-child(even) {
+  background-color:  #b2d6f8;
+}
+
+.exp {
+  text-align: center;
+  color: gray;
+}
+
+
+
+footer {
+  background-image: url('bg.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(90%);
+}
+
+.footer-sec {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.footer-quicklinks {
+  margin-top: 50px;
+  color: white;
+  
+}
+
+.footer-quicklinks a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-quicklinks a:hover {
+  color: white;
+  filter: drop-shadow(1px 1px 0px #1E00FF);
+  transform: scale(1.05);
+}
+
+.footer-quicklinks p {
+  text-decoration: underline 1px;
+  padding-bottom: 20px;
+
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  margin-top: 50px;
+  margin-right: -80px ;
+}
+
+.footer-social img {
+  width: 40px;
+  transition: transform 0.3s ease-in-out;
+   border-radius: 10px;
+}
+
+.footer-social img:hover{
+  transform: scale(1.05);
+}
+
+.footer-social p {
+  text-decoration: underline 1px;
+  padding-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+ 
+}
+
+.footer-logo img:hover{
+  transform: scale(1.05);
+}
+
+.copyrights{
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.56);
+}
+
+
+@media screen and (max-width:700px) {
+
+  .table2 {
+    width: 95%;
+  }
+
+  .thead2 th {
+    font-size: 12px;
+  } 
+  
+  .table3 {
+    width: 90%;
+  }
+
+  .footer-sec {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30px;
+    padding-bottom: 30px;
+  }
+
+  .footer-quicklinks {
+    margin-left: 10px;
+  }
+
+  .footer-social {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    filter: drop-shadow(3px 5px 7px gray);
+  }
+
+
+}
